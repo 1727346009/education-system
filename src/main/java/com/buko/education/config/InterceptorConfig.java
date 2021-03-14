@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * @author Mr.徐健威
+ * @author 徐健威
  */
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {

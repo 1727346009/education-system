@@ -1,7 +1,7 @@
 package com.buko.education.exception;
 
 /**
- * @author Mr.徐健威
+ * @author 徐健威
  */
 public class AuthenticateException extends RuntimeException {
     public AuthenticateException(String message) {

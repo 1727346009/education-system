@@ -1,7 +1,7 @@
 package com.buko.education.enumerate;
 
 /**
- * @author Mr.徐健威
+ * @author 徐健威
  */
 
 public enum StatusCodeEnum {

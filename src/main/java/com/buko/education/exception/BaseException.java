@@ -1,7 +1,7 @@
 package com.buko.education.exception;
 
 /**
- * @author buko
+ * @author 徐健威
  */
 public class BaseException extends RuntimeException {
     public BaseException(String message) {

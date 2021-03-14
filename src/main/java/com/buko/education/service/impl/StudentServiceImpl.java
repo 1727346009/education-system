@@ -2,6 +2,7 @@ package com.buko.education.service.impl;
 
 import com.buko.commons.util.JWTUtil;
 import com.buko.education.dao.StudentDao;
+import com.buko.education.exception.BaseException;
 import com.buko.education.po.Student;
 import com.buko.education.po.Token;
 import com.buko.education.service.StudentService;
@@ -43,10 +44,10 @@ public class StudentServiceImpl implements StudentService {
     public Token loginStudent(Student student, String host) {
         String auth = studentDao.auth(student.getId());
         if (auth.isEmpty()) {
-            throw new RuntimeException("用户名或密码错误");
+            throw new BaseException("用户名或密码错误");
         }
         if (!encoder.matches(student.getPassword(), auth)) {
-            throw new RuntimeException("用户名或密码错误");
+            throw new BaseException("用户名或密码错误");
         }
         redisTemplate.opsForValue().set("host:" + student.getId(), host,
                 jwtUtil.getJwtConfig().getExpiresSeconds(), TimeUnit.MILLISECONDS);

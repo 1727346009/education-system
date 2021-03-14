@@ -3,7 +3,7 @@ package com.buko.education.service;
 import com.buko.education.vo.ShowClassVO;
 
 /**
- * @author buko
+ * @author 徐健威
  */
 public interface ClassService {
     /**

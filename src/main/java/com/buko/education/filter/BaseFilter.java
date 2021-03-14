@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author Mr.徐健威
+ * @author 徐健威
  */
 @Component
 public class BaseFilter implements Filter {

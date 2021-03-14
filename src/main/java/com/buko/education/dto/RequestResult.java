@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 /**
- * @author Mr.徐健威
+ * @author 徐健威
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
